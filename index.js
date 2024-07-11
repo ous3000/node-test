@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 80;
 const app = express();
 
 app.use(function(req, res, next) {
@@ -23,3 +23,9 @@ console.log('ddd');
 app.use('/app-data', appDataRouter)
 
 app.listen(PORT);
+
+/*
+
+git config --global user.name "git-user-1"
+
+*/
